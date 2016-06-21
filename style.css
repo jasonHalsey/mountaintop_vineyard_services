@@ -1,5 +1,5 @@
 /*
-Theme Name:   Mountain Top Vineyard Management Services
+Theme Name:   Mountaintop Vineyard Management Services
 Theme URI:    http://example.com/twenty-sixteen-child/
 Description:  Twenty Sixteen Child Theme
 Author:       Jason Halsey
@@ -84,4 +84,145 @@ html {
 /* line 9, scss/neat/grid/_box-sizing.scss */
 *, *::after, *::before {
   box-sizing: inherit;
+}
+
+/* line 1, scss/partials/_navigation.scss */
+.navigation {
+  display: block;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 999;
+  height: 100px;
+  width: 100%;
+  border-bottom: 1px solid #fff;
+}
+
+/* -------------------------------- 
+
+Modules - reusable parts of our design
+
+-------------------------------- */
+/* line 8, scss/partials/_back-to-top.scss */
+.cd-container {
+  width: 100%;
+}
+
+/* line 11, scss/partials/_back-to-top.scss */
+.cd-container::after {
+  /* clearfix */
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* line 17, scss/partials/_back-to-top.scss */
+.cd-top {
+  display: block;
+  position: fixed;
+  color: #fff;
+  bottom: 40px;
+  right: 10px;
+  text-align: center;
+  z-index: 9999;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+}
+
+/* line 34, scss/partials/_back-to-top.scss */
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+
+/* line 39, scss/partials/_back-to-top.scss */
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 44, scss/partials/_back-to-top.scss */
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+}
+
+/* line 48, scss/partials/_back-to-top.scss */
+.no-touch .cd-top:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  opacity: 1;
+}
+
+@media only screen and (min-width: 768px) {
+  /* line 53, scss/partials/_back-to-top.scss */
+  .cd-top {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* line 59, scss/partials/_back-to-top.scss */
+  .cd-top {
+    height: 60px;
+    width: 60px;
+    right: 30px;
+    bottom: 30px;
+  }
+}
+/* line 1, scss/partials/_home.scss */
+body {
+  background-color: #D8D5C9;
+  padding-bottom: 200px;
+}
+
+/* line 5, scss/partials/_home.scss */
+.hero_row {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: 100vh;
+}
+@media only screen and (max-width: 40em) {
+  /* line 5, scss/partials/_home.scss */
+  .hero_row {
+    height: calc(50vh);
+  }
+}
+
+/* line 15, scss/partials/_home.scss */
+.hero {
+  background-image: url(images/rows_bw.jpg);
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #000;
+  text-align: center;
+  height: 100vh;
+}
+@media only screen and (max-width: 40em) {
+  /* line 15, scss/partials/_home.scss */
+  .hero {
+    height: calc(50vh);
+  }
+}
+
+/* line 29, scss/partials/_home.scss */
+.grittyrule {
+  height: 11px;
+  width: 100%;
+  background-image: url("images/grittyrule.png");
+  background-size: 100% 11px;
+  background-position: 50%;
+  margin-top: -6px;
+  z-index: 20;
+  position: absolute;
+  background-repeat: no-repeat;
 }

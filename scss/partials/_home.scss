@@ -1,0 +1,39 @@
+body{
+    background-color: #D8D5C9;
+    padding-bottom: 200px;
+}
+.hero_row{
+    position:relative;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: 100vh;
+    @media only screen and (max-width: 40em) {
+      height: calc(50vh);
+    }
+}
+.hero{
+    background-image: url(images/rows_bw.jpg);
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #000;
+    text-align: center;
+    height: 100vh;
+    // height: calc(100vh - 35px);
+    @media only screen and (max-width: 40em) {
+      height: calc(50vh);
+    }
+}
+.grittyrule{
+    height: 11px;
+    width: 100%;
+    background-image: url('images/grittyrule.png');
+    background-size: 100% 11px;
+    background-position: 50%;
+    margin-top: -6px;
+    z-index: 20;
+    position: absolute;
+    background-repeat: no-repeat;
+}

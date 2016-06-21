@@ -1,5 +1,5 @@
 /*
-Theme Name:   Mountain Top Vineyard Management Services
+Theme Name:   Mountaintop Vineyard Management Services
 Theme URI:    http://example.com/twenty-sixteen-child/
 Description:  Twenty Sixteen Child Theme
 Author:       Jason Halsey
@@ -18,4 +18,8 @@ Text Domain:  twenty-sixteen-child
 //Famework
 @import "bourbon/bourbon";
 @import "neat/neat";
-// @import "base/base";
+
+//Partials
+@import "partials/_navigation";
+@import "partials/back-to-top";
+@import "partials/home";
