@@ -20,6 +20,7 @@ Text Domain:  twenty-sixteen-child
 @import "neat/neat";
 
 //Partials
-@import "partials/_navigation";
+@import "partials/variables";
+@import "partials/navigation";
 @import "partials/back-to-top";
 @import "partials/home";

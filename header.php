@@ -17,8 +17,9 @@
 <head>
   <meta charset="<?php bloginfo( 'charset' ); ?>">
   <meta name="viewport" content="width=device-width">
-  <title><?php wp_title( '|', true, 'right' ); ?>Mountaintop Vineyard Management Services</title>
+  <title><?php wp_title( '|', true, 'right' ); ?>Mountaintop Vineyard Services</title>
   <link rel="profile" href="http://gmpg.org/xfn/11">
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,600,700|Roboto:400,700' rel='stylesheet' type='text/css'>
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
   <!--[if lt IE 9]>
@@ -29,16 +30,26 @@
 </head>
 
 <body <?php body_class('Site'); ?> "cd-container">
-  
-   <header class="navigation" role="banner">
 
-      <div class="navigation-wrapper">
-      <div class="mobile-logo">
-        <!-- <img src="<#?php echo bloginfo('url'); ?>/wp-content/themes/mountain_top/images/mtvms_logo.svg" /> -->
-      </div>
-        <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu"><img src="<?php echo bloginfo('url'); ?>/wp-content/themes/mountain_top/images/menu-open-large.png" /></a>
-        <nav role="navigation">
-          <?php wp_nav_menu( array( 'menu_id' => 'js-navigation-menu', 'theme_location' => 'primary', 'menu_class' => 'navigation-menu show' ) ); ?>
-        </nav>    
-      </div>
-    </header>
+<header class="centered-navigation navigation_fixed" role="banner">
+  <div class="centered-navigation-wrapper">
+    <a href="javascript:void(0)" class="mobile-logo">
+      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_square.png" alt="Logo image">
+    </a>
+    <a href="javascript:void(0)" id="js-centered-navigation-mobile-menu" class="centered-navigation-mobile-menu">MENU</a>
+    <nav role="navigation">
+      <ul id="js-centered-navigation-menu" class="centered-navigation-menu show">
+        <li class="nav-link"><a href="javascript:void(0)">Farming</a></li>
+        <li class="nav-link"><a href="javascript:void(0)">Development</a></li>
+        <li class="nav-link"><a href="javascript:void(0)">About Us</a></li>
+        <li class="nav-link"><a href="javascript:void(0)">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="logo_container">
+      <a href="javascript:void(0)" class="logo">
+        <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_square.png" alt="Logo image">
+      </a>
+    </div>
+  </div>
+</header>
+

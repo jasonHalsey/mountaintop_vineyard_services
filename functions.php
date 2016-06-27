@@ -21,4 +21,25 @@
 /* ------------------------------------ */ 
   add_filter('show_admin_bar', '__return_false');
 
+  /*  Enqueue scripts
+/* ------------------------------------ */ 
+
+  function jquery_enqueue() {
+      wp_deregister_script('jquery');
+      wp_register_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js', false, null);
+      wp_enqueue_script('jquery');
+  }
+  if (!is_admin()) add_action('wp_enqueue_scripts', 'jquery_enqueue', 11);
+
+  function wpb_adding_scripts() {
+    wp_register_script('mtvs_scripts', get_stylesheet_directory_uri() . '/js/mtvs_scripts.js');
+    wp_enqueue_script('mtvs_scripts');
+
+  }
+  add_action( 'wp_footer', 'wpb_adding_scripts' ); 
+
+
+
+
+
 ?>
