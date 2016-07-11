@@ -1,7 +1,6 @@
 body{
     background-color: $main_bg;
-    // background-color: #D8D5C9;
-    padding-bottom: 200px;
+    padding-bottom: 2000px; //TODO: For Dev Only
 }
 .hero_row{
     position:relative;
@@ -22,7 +21,6 @@ body{
     background-color: #000;
     text-align: center;
     height: 100vh;
-    // height: calc(100vh - 35px);
     @media only screen and (max-width: 40em) {
       height: calc(50vh);
     }
@@ -38,3 +36,72 @@ body{
     position: absolute;
     background-repeat: no-repeat;
 }
+.mosaic_text{
+    padding:1.5em;
+    background-color: $dk_gray;
+} 
+
+.mosaic_block{
+    font-family: $primayBodyFont;
+    color: $bodyFontColor_lt;
+    line-height: 2.0em;
+    font-weight:400;
+    width:100%;
+    @include clearfix;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    h2{
+        font-family: $primayHeaderFont;
+        font-size: 2.0em;
+        line-height: 2.0em;
+    }
+    .farming_img{
+        background-image: url(images/tractor.jpg);
+        position: relative;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+    }
+}
+
+
+@media screen and (min-width: 940px){
+  .mosaic_block {
+   -webkit-flex-direction: row;
+    flex-direction: row;
+  }
+  .mosaic_block > * {
+    -webkit-flex: 1;
+    flex: 1;
+  }
+  div.text_block{
+    background-color: #bababa;
+  }
+  div.img_block{
+    background-color: #ffba00;
+  }
+  .mosaic_block > div {
+    
+    -webkit-flex: 2;
+    flex: 2;
+  }
+}
+
+@media screen and (max-width: 940px){
+  .mosaic_block {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+    div.text_block{
+    background-color: #bababa;
+  }
+  div.img_block{
+    background-color: #ffba00;
+    min-height: 6.0em
+  }
+}
+
+

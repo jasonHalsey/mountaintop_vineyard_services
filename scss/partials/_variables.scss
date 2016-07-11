@@ -1,7 +1,16 @@
-//Custom Fonts
+//Custom Font Families
 // $primayHeaderFont: 'Raleway', sans-serif;
 // $primayBodyFont: 'Roboto', sans-serif;
-$primayNavFont: 'Raleway', sans-serif;
+$primayNavFont: 'Oswald', sans-serif;
+$primayHeaderFont: 'Oswald', sans-serif;
+$primayBodyFont: 'Roboto', sans-serif;
+
+//Custom Font Sizes
+$primayNavSize: 1.50rem;
+$bodyFontSize: 18px;
+
+//Custom Font Colors
+$bodyFontColor_lt: #ffffff;
 
 //Custom Breakpoints
 $dropscreen: new-breakpoint(max-width 1600px);

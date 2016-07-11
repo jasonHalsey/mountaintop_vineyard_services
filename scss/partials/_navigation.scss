@@ -1,34 +1,51 @@
+$base-border-radius: 3px !default;
+$dark-gray: #333 !default;
+$large-screen: 53.75em !default;
+$base-font-color: $dark-gray !default;
+$centered-navigation-padding: 1em;
+$centered-navigation-logo-height: 4em;
+$centered-navigation-background: $blackTrans;
+$centered-navigation-color: $lt_gray;
+$centered-navigation-color-hover: $base-font-color;
+$centered-navigation-height: 60px;
+$centered-navigation-item-padding: 1em;
+$centered-navigation-submenu-padding: 1em;
+$centered-navigation-submenu-width: 12em;
+$centered-navigation-item-nudge: 2.2em;$horizontal-bar-mode: $large-screen;
+
 .navigation_fixed{
   display:block;
   position: fixed;
   background-color: $blackTrans;
   z-index:999;
-  height:100px;
+  // height:100px;
   width:100%;
   border-bottom: 1px solid #fff;
 }
 
 .logo_container{
-  width:100%;
+  width:20%;
   text-align: center;
+  background-color: $dk_gray;
+  border: 1px #fff solid;
+  padding:1.0em;
+  margin: 0 auto -2em;
+  -webkit-box-shadow: 1px 0px 25px 3px rgba(0,0,0,0.75);
+  -moz-box-shadow: 1px 0px 25px 3px rgba(0,0,0,0.75);
+  box-shadow: 1px 0px 25px 3px rgba(0,0,0,0.75);
+  display: none;
+  @include media($horizontal-bar-mode) {
+    display: block;
+  }
+  img{
+    width:100%;
+    display:block;
+  }
 }
 
 .centered-navigation {
-  $base-border-radius: 3px !default;
-  $dark-gray: #333 !default;
-  $large-screen: 53.75em !default;
-  $base-font-color: $dark-gray !default;
-  $centered-navigation-padding: 1em;
-  $centered-navigation-logo-height: 2em;
-  $centered-navigation-background: $blackTrans;
-  $centered-navigation-color: #ffffff;
-  $centered-navigation-color-hover: $base-font-color;
-  $centered-navigation-height: 60px;
-  $centered-navigation-item-padding: 1em;
-  $centered-navigation-submenu-padding: 1em;
-  $centered-navigation-submenu-width: 12em;
-  $centered-navigation-item-nudge: 2.2em;
-  $horizontal-bar-mode: $large-screen;
+  
+  
 
   width: 100%;
   z-index: 9999;
@@ -125,7 +142,7 @@
       outline: none;
       text-decoration: none;
       font-family: $primayNavFont;
-      font-size: 1.65rem;
+      font-size: $primayNavSize;
 
       &:focus,
       &:hover {
@@ -153,11 +170,6 @@
     }
   }
 
-  .logo img {
-    margin-bottom: -$centered-navigation-logo-height / 3;
-    max-height: $centered-navigation-logo-height;
-    opacity: 0.6;
-  }
 
   // Sub menus
 

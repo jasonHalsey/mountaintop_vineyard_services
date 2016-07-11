@@ -33,7 +33,9 @@
 
   function wpb_adding_scripts() {
     wp_register_script('mtvs_scripts', get_stylesheet_directory_uri() . '/js/mtvs_scripts.js');
+    wp_register_script('arbitrary-anchor', get_stylesheet_directory_uri() . '/js/jquery.arbitrary-anchor.js');
     wp_enqueue_script('mtvs_scripts');
+    wp_enqueue_script('arbitrary-anchor');
 
   }
   add_action( 'wp_footer', 'wpb_adding_scripts' ); 
