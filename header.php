@@ -39,10 +39,11 @@
     <a href="javascript:void(0)" id="js-centered-navigation-mobile-menu" class="centered-navigation-mobile-menu">MENU</a>
     <nav role="navigation">
       <ul id="js-centered-navigation-menu" class="centered-navigation-menu show">
-        <li class="nav-link"><a href="##farming|500">Farming</a></li>
-        <li class="nav-link"><a href="javascript:void(0)">Development</a></li>
-        <li class="nav-link"><a href="javascript:void(0)">About Us</a></li>
-        <li class="nav-link"><a href="javascript:void(0)">Contact</a></li>
+        <li class="nav-link"><a href="#farming" class="scroll-on-page-link">Farming</a></li>
+        <li class="nav-link"><a href="#development" class="scroll-on-page-link">Development</a></li>
+        <li class="nav-link"><a href="#sustainability" class="scroll-on-page-link">Sustainability</a></li>
+        <li class="nav-link"><a href="#about_us" class="scroll-on-page-link">About Us</a></li>
+        <li class="nav-link"><a href="#farming" class="scroll-on-page-link">Contact</a></li>
       </ul>
     </nav>
     <div class="logo_container">

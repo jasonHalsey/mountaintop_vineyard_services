@@ -1,6 +1,5 @@
 body{
     background-color: $main_bg;
-    padding-bottom: 2000px; //TODO: For Dev Only
 }
 .hero_row{
     position:relative;
@@ -37,7 +36,7 @@ body{
     background-repeat: no-repeat;
 }
 .mosaic_text{
-    padding:1.5em;
+    padding:3.5em;
     background-color: $dk_gray;
 } 
 
@@ -63,7 +62,35 @@ body{
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-
+    }
+    .sustainability_img{
+        background-image: url(images/bud-break_vclose.jpg);
+        position: relative;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .development_img{
+        background-image: url(images/flowering-from-hill.jpg);
+        position: relative;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .about_img{
+        background-image: url(images/mt_hood_at_sunset.jpg);
+        position: relative;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}
+#contact_us{
+    a{
+        color:#a4cd39;
+        &:hover{
+            color: $lt_gray;
+        }
     }
 }
 
