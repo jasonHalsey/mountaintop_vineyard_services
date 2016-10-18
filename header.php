@@ -43,7 +43,7 @@
         <li class="nav-link"><a href="#development" class="scroll-on-page-link">Development</a></li>
         <li class="nav-link"><a href="#sustainability" class="scroll-on-page-link">Sustainability</a></li>
         <li class="nav-link"><a href="#about_us" class="scroll-on-page-link">About Us</a></li>
-        <li class="nav-link"><a href="#farming" class="scroll-on-page-link">Contact</a></li>
+        <li class="nav-link"><a href="#contact_us" class="scroll-on-page-link">Contact</a></li>
       </ul>
     </nav>
     <div class="logo_container">

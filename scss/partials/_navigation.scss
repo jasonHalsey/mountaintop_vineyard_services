@@ -16,11 +16,14 @@ $centered-navigation-item-nudge: 2.2em;$horizontal-bar-mode: $large-screen;
 .navigation_fixed{
   display:block;
   position: fixed;
-  background-color: $blackTrans;
+  background-color: $whiteTrans;
   z-index:999;
   // height:100px;
   width:100%;
   border-bottom: 1px solid #fff;
+  @include media($horizontal-bar-mode) {
+    background-color: $blackTrans;
+  }
 }
 
 .logo_container{
@@ -29,7 +32,7 @@ $centered-navigation-item-nudge: 2.2em;$horizontal-bar-mode: $large-screen;
   background-color: $dk_gray;
   border: 1px #fff solid;
   padding:1.0em;
-  margin: 0 auto -2em;
+  margin: 0 auto -5em;
   -webkit-box-shadow: 1px 0px 25px 3px rgba(0,0,0,0.75);
   -moz-box-shadow: 1px 0px 25px 3px rgba(0,0,0,0.75);
   box-shadow: 1px 0px 25px 3px rgba(0,0,0,0.75);
@@ -58,7 +61,8 @@ $centered-navigation-item-nudge: 2.2em;$horizontal-bar-mode: $large-screen;
     img {
       max-height: $centered-navigation-height;
       opacity: 0.6;
-      padding: 0.8em 0;
+      padding: 0.1em 0.8em;
+      background-color: #000;
     }
 
     @include media($horizontal-bar-mode) {
@@ -67,7 +71,7 @@ $centered-navigation-item-nudge: 2.2em;$horizontal-bar-mode: $large-screen;
   }
 
   .centered-navigation-mobile-menu {
-    color: $centered-navigation-color;
+    color: $white;
     display: block;
     float: right;
     line-height: $centered-navigation-height;

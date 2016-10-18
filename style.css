@@ -353,64 +353,71 @@ hr {
 .navigation_fixed {
   display: block;
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
   z-index: 999;
   width: 100%;
   border-bottom: 1px solid #fff;
 }
+@media screen and (min-width: 900px) {
+  /* line 16, scss/partials/_navigation.scss */
+  .navigation_fixed {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
 
-/* line 26, scss/partials/_navigation.scss */
+/* line 29, scss/partials/_navigation.scss */
 .logo_container {
   width: 20%;
   text-align: center;
   background-color: #404040;
   border: 1px #fff solid;
   padding: 1.0em;
-  margin: 0 auto -2em;
+  margin: 0 auto -5em;
   -webkit-box-shadow: 1px 0px 25px 3px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 1px 0px 25px 3px rgba(0, 0, 0, 0.75);
   box-shadow: 1px 0px 25px 3px rgba(0, 0, 0, 0.75);
   display: none;
 }
 @media screen and (min-width: 900px) {
-  /* line 26, scss/partials/_navigation.scss */
+  /* line 29, scss/partials/_navigation.scss */
   .logo_container {
     display: block;
   }
 }
-/* line 40, scss/partials/_navigation.scss */
+/* line 43, scss/partials/_navigation.scss */
 .logo_container img {
   width: 100%;
   display: block;
 }
 
-/* line 46, scss/partials/_navigation.scss */
+/* line 49, scss/partials/_navigation.scss */
 .centered-navigation {
   width: 100%;
   z-index: 9999;
 }
-/* line 52, scss/partials/_navigation.scss */
+/* line 55, scss/partials/_navigation.scss */
 .centered-navigation .mobile-logo {
   display: inline;
   float: left;
   max-height: 60px;
   padding-left: 1em;
 }
-/* line 58, scss/partials/_navigation.scss */
+/* line 61, scss/partials/_navigation.scss */
 .centered-navigation .mobile-logo img {
   max-height: 60px;
   opacity: 0.6;
-  padding: 0.8em 0;
+  padding: 0.1em 0.8em;
+  background-color: #000;
 }
 @media screen and (min-width: 900px) {
-  /* line 52, scss/partials/_navigation.scss */
+  /* line 55, scss/partials/_navigation.scss */
   .centered-navigation .mobile-logo {
     display: none;
   }
 }
-/* line 69, scss/partials/_navigation.scss */
+/* line 73, scss/partials/_navigation.scss */
 .centered-navigation .centered-navigation-mobile-menu {
-  color: #B8B8B8;
+  color: #ffffff;
   display: block;
   float: right;
   line-height: 60px;
@@ -420,16 +427,16 @@ hr {
   text-transform: uppercase;
 }
 @media screen and (min-width: 900px) {
-  /* line 69, scss/partials/_navigation.scss */
+  /* line 73, scss/partials/_navigation.scss */
   .centered-navigation .centered-navigation-mobile-menu {
     display: none;
   }
 }
-/* line 83, scss/partials/_navigation.scss */
+/* line 87, scss/partials/_navigation.scss */
 .centered-navigation .centered-navigation-mobile-menu:focus, .centered-navigation .centered-navigation-mobile-menu:hover {
   color: #333;
 }
-/* line 91, scss/partials/_navigation.scss */
+/* line 95, scss/partials/_navigation.scss */
 .centered-navigation .centered-navigation-wrapper {
   max-width: 1200px;
   margin-left: auto;
@@ -449,7 +456,7 @@ hr {
   content: "";
   display: block;
 }
-/* line 98, scss/partials/_navigation.scss */
+/* line 102, scss/partials/_navigation.scss */
 .centered-navigation ul.centered-navigation-menu {
   clear: both;
   display: none;
@@ -460,18 +467,18 @@ hr {
   width: 100%;
   z-index: 99999;
 }
-/* line 108, scss/partials/_navigation.scss */
+/* line 112, scss/partials/_navigation.scss */
 .centered-navigation ul.centered-navigation-menu.show {
   display: block;
 }
 @media screen and (min-width: 900px) {
-  /* line 98, scss/partials/_navigation.scss */
+  /* line 102, scss/partials/_navigation.scss */
   .centered-navigation ul.centered-navigation-menu {
     display: block;
     text-align: center;
   }
 }
-/* line 126, scss/partials/_navigation.scss */
+/* line 130, scss/partials/_navigation.scss */
 .centered-navigation ul li.nav-link {
   background: rgba(0, 0, 0, 0.5);
   display: block;
@@ -482,7 +489,7 @@ hr {
   width: 100%;
   z-index: 9999;
 }
-/* line 136, scss/partials/_navigation.scss */
+/* line 140, scss/partials/_navigation.scss */
 .centered-navigation ul li.nav-link a {
   color: #B8B8B8;
   display: inline-block;
@@ -491,56 +498,56 @@ hr {
   font-family: "Oswald", sans-serif;
   font-size: 1.5rem;
 }
-/* line 144, scss/partials/_navigation.scss */
+/* line 148, scss/partials/_navigation.scss */
 .centered-navigation ul li.nav-link a:focus, .centered-navigation ul li.nav-link a:hover {
   color: #333;
 }
 @media screen and (min-width: 900px) {
-  /* line 126, scss/partials/_navigation.scss */
+  /* line 130, scss/partials/_navigation.scss */
   .centered-navigation ul li.nav-link {
     background: transparent;
     display: inline;
     line-height: 60px;
   }
-  /* line 155, scss/partials/_navigation.scss */
+  /* line 159, scss/partials/_navigation.scss */
   .centered-navigation ul li.nav-link a {
     padding-right: 1em;
   }
 }
-/* line 161, scss/partials/_navigation.scss */
+/* line 165, scss/partials/_navigation.scss */
 .centered-navigation li.logo.nav-link {
   display: none;
   line-height: 0;
 }
 @media screen and (min-width: 900px) {
-  /* line 161, scss/partials/_navigation.scss */
+  /* line 165, scss/partials/_navigation.scss */
   .centered-navigation li.logo.nav-link {
     display: inline;
   }
 }
-/* line 173, scss/partials/_navigation.scss */
+/* line 177, scss/partials/_navigation.scss */
 .centered-navigation li.more.nav-link {
   padding-right: 0;
 }
 @media screen and (min-width: 900px) {
-  /* line 173, scss/partials/_navigation.scss */
+  /* line 177, scss/partials/_navigation.scss */
   .centered-navigation li.more.nav-link {
     padding-right: 1em;
   }
 }
-/* line 180, scss/partials/_navigation.scss */
+/* line 184, scss/partials/_navigation.scss */
 .centered-navigation li.more.nav-link > ul > li:first-child a {
   padding-top: 1em;
 }
-/* line 184, scss/partials/_navigation.scss */
+/* line 188, scss/partials/_navigation.scss */
 .centered-navigation li.more.nav-link a {
   margin-right: 1em;
 }
-/* line 188, scss/partials/_navigation.scss */
+/* line 192, scss/partials/_navigation.scss */
 .centered-navigation li.more.nav-link > a {
   padding-right: 0.6em;
 }
-/* line 192, scss/partials/_navigation.scss */
+/* line 196, scss/partials/_navigation.scss */
 .centered-navigation li.more.nav-link > a::after {
   position: absolute;
   top: auto;
@@ -550,51 +557,51 @@ hr {
   color: #B8B8B8;
   content: "\25BE";
 }
-/* line 199, scss/partials/_navigation.scss */
+/* line 203, scss/partials/_navigation.scss */
 .centered-navigation li.more {
   overflow: visible;
   padding-right: 0;
 }
-/* line 203, scss/partials/_navigation.scss */
+/* line 207, scss/partials/_navigation.scss */
 .centered-navigation li.more a {
   padding-right: 1em;
 }
-/* line 207, scss/partials/_navigation.scss */
+/* line 211, scss/partials/_navigation.scss */
 .centered-navigation li.more > a {
   padding-right: 1.6em;
   position: relative;
 }
 @media screen and (min-width: 900px) {
-  /* line 207, scss/partials/_navigation.scss */
+  /* line 211, scss/partials/_navigation.scss */
   .centered-navigation li.more > a {
     margin-right: 1em;
   }
 }
-/* line 215, scss/partials/_navigation.scss */
+/* line 219, scss/partials/_navigation.scss */
 .centered-navigation li.more > a::after {
   content: "›";
   font-size: 1.2em;
   position: absolute;
   right: 0.5em;
 }
-/* line 223, scss/partials/_navigation.scss */
+/* line 227, scss/partials/_navigation.scss */
 .centered-navigation li.more:focus > .submenu, .centered-navigation li.more:hover > .submenu {
   display: block;
 }
 @media screen and (min-width: 900px) {
-  /* line 199, scss/partials/_navigation.scss */
+  /* line 203, scss/partials/_navigation.scss */
   .centered-navigation li.more {
     padding-right: 1em;
     position: relative;
   }
 }
-/* line 234, scss/partials/_navigation.scss */
+/* line 238, scss/partials/_navigation.scss */
 .centered-navigation ul.submenu {
   display: none;
   padding-left: 0;
 }
 @media screen and (min-width: 900px) {
-  /* line 234, scss/partials/_navigation.scss */
+  /* line 238, scss/partials/_navigation.scss */
   .centered-navigation ul.submenu {
     left: -1em;
     position: absolute;
@@ -602,42 +609,42 @@ hr {
   }
 }
 @media screen and (min-width: 900px) {
-  /* line 244, scss/partials/_navigation.scss */
+  /* line 248, scss/partials/_navigation.scss */
   .centered-navigation ul.submenu .submenu.fly-out-right {
     left: 11.8em;
     top: 0;
   }
 }
 @media screen and (min-width: 900px) {
-  /* line 251, scss/partials/_navigation.scss */
+  /* line 255, scss/partials/_navigation.scss */
   .centered-navigation ul.submenu .submenu.fly-out-left {
     left: -11.8em;
     top: 0;
   }
 }
-/* line 258, scss/partials/_navigation.scss */
+/* line 262, scss/partials/_navigation.scss */
 .centered-navigation ul.submenu li {
   display: block;
   padding-right: 0;
 }
 @media screen and (min-width: 900px) {
-  /* line 258, scss/partials/_navigation.scss */
+  /* line 262, scss/partials/_navigation.scss */
   .centered-navigation ul.submenu li {
     line-height: 46.15385px;
   }
-  /* line 265, scss/partials/_navigation.scss */
+  /* line 269, scss/partials/_navigation.scss */
   .centered-navigation ul.submenu li:first-child > a {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
   }
-  /* line 270, scss/partials/_navigation.scss */
+  /* line 274, scss/partials/_navigation.scss */
   .centered-navigation ul.submenu li:last-child > a {
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
     padding-bottom: 0.7em;
   }
 }
-/* line 277, scss/partials/_navigation.scss */
+/* line 281, scss/partials/_navigation.scss */
 .centered-navigation ul.submenu li a {
   background-color: rgba(0, 0, 0, 0.5);
   display: inline-block;
@@ -646,7 +653,7 @@ hr {
   width: 100%;
 }
 @media screen and (min-width: 900px) {
-  /* line 277, scss/partials/_navigation.scss */
+  /* line 281, scss/partials/_navigation.scss */
   .centered-navigation ul.submenu li a {
     background-color: rgba(0, 0, 0, 0.5);
     padding-left: 1em;
@@ -816,13 +823,13 @@ body {
 }
 /* line 59, scss/partials/_home.scss */
 .mosaic_block .farming_img {
-  background-image: url(images/tractor.jpg);
+  background-image: url(images/flowering-from-hill.jpg);
   position: relative;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-/* line 66, scss/partials/_home.scss */
+/* line 67, scss/partials/_home.scss */
 .mosaic_block .sustainability_img {
   background-image: url(images/bud-break_vclose.jpg);
   position: relative;
@@ -830,15 +837,15 @@ body {
   background-position: center;
   background-size: cover;
 }
-/* line 73, scss/partials/_home.scss */
+/* line 74, scss/partials/_home.scss */
 .mosaic_block .development_img {
-  background-image: url(images/flowering-from-hill.jpg);
+  background-image: url(images/tractor.jpg);
   position: relative;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-/* line 80, scss/partials/_home.scss */
+/* line 82, scss/partials/_home.scss */
 .mosaic_block .about_img {
   background-image: url(images/mt_hood_at_sunset.jpg);
   position: relative;
@@ -847,57 +854,57 @@ body {
   background-size: cover;
 }
 
-/* line 89, scss/partials/_home.scss */
+/* line 91, scss/partials/_home.scss */
 #contact_us a {
   color: #a4cd39;
 }
-/* line 91, scss/partials/_home.scss */
+/* line 93, scss/partials/_home.scss */
 #contact_us a:hover {
   color: #B8B8B8;
 }
 
 @media screen and (min-width: 940px) {
-  /* line 99, scss/partials/_home.scss */
+  /* line 101, scss/partials/_home.scss */
   .mosaic_block {
     -webkit-flex-direction: row;
     flex-direction: row;
   }
 
-  /* line 103, scss/partials/_home.scss */
+  /* line 105, scss/partials/_home.scss */
   .mosaic_block > * {
     -webkit-flex: 1;
     flex: 1;
   }
 
-  /* line 107, scss/partials/_home.scss */
+  /* line 109, scss/partials/_home.scss */
   div.text_block {
     background-color: #bababa;
   }
 
-  /* line 110, scss/partials/_home.scss */
+  /* line 112, scss/partials/_home.scss */
   div.img_block {
     background-color: #ffba00;
   }
 
-  /* line 113, scss/partials/_home.scss */
+  /* line 115, scss/partials/_home.scss */
   .mosaic_block > div {
     -webkit-flex: 2;
     flex: 2;
   }
 }
 @media screen and (max-width: 940px) {
-  /* line 121, scss/partials/_home.scss */
+  /* line 123, scss/partials/_home.scss */
   .mosaic_block {
     -webkit-flex-direction: column;
     flex-direction: column;
   }
 
-  /* line 125, scss/partials/_home.scss */
+  /* line 127, scss/partials/_home.scss */
   div.text_block {
     background-color: #bababa;
   }
 
-  /* line 128, scss/partials/_home.scss */
+  /* line 130, scss/partials/_home.scss */
   div.img_block {
     background-color: #ffba00;
     min-height: 6em;
