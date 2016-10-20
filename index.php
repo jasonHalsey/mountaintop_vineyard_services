@@ -53,7 +53,7 @@ Template Name: home
   </div>
   <div class="mosaic_text eq">
     <h2>About Us</h2>
-    <p>MountainTop Vineyard Services is owned and operated by Simon Burr, a longtime veteran of vineyards throughout the Willamette Valley. The company was formed in 2006 after more than a decade of previous vineyard management experience—with client work ranging from A to Z Wineworks and Domaine Serene, to Finnigan Hill and L’Angolo Estate. MTVS prides itself on meticulous, year-round vineyard care, close contact with our clients, and a dependable team of skilled tractor operators and crew supervisors dedicated to each of our vineyards. 
+    <p>MountainTop Vineyard Services is owned and operated by Simon Burr, a longtime veteran of vineyards throughout the Willamette Valley. The company was formed in 2006 after more than a decade of previous vineyard management experience—with client work ranging from A to Z Wineworks and Boedecker Cellars, to Finnigan Hill and L’Angolo Estate. MTVS prides itself on meticulous, year-round vineyard care, close contact with our clients, and a dependable team of skilled tractor operators and crew supervisors dedicated to each of our vineyards. 
     </p>
   </div>
 </section>
