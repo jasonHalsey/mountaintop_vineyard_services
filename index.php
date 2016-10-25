@@ -16,7 +16,7 @@ Template Name: home
 <div class="grittyrule"></div>
 <section id="farming" class="left-text mosaic_block equalHWrap eqWrap">
   <div class="mosaic_text eq">
-    <h2>Vinyard Farming</h2>
+    <h2>Vineyard Farming</h2>
     <p>Your vineyard requires as many as 45 actions per year—from tilling and planting cover crop, to picking fruit and pulling brush. MTVS provides full-service farming to manage this entire picture and bring confidence to every vintage. We simplify your outlook by never changing your tractor driver or crew supervisor. And we take a hands-on, careful approach to managing the labor crews we bring in at the most demanding times of year. This keeps your land clean, your mind at ease, and your vines productive.
     </p>
   </div>
@@ -70,7 +70,7 @@ Template Name: home
     <hr>
     <p>
       <h4>Email:</h4>
-      <a href="mailto:simonburr.mtvs@gmail.com">simonburr.mtvs@gmail.com</a>
+      <a href="mailto:simon.burr@mountaintopvs.com">simon.burr@mountaintopvs.com</a>
     </p>
   </div>
 
